@@ -1,6 +1,6 @@
 package javaHomework.homework1;
 
-public class PhoneTest {
+public class PhoneDemo {
     public static void main(String[] args) {
         Phone phoneOne = new Phone();
         Phone phoneTwo = new Phone();
