@@ -1,6 +1,4 @@
-package javaHomework.homework3;
-
-import java.util.Scanner;
+package JavaHomework.homework3;
 
 public class LogisticsDemo {
     public static void main(String[] args) {

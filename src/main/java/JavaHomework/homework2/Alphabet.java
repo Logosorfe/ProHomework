@@ -1,4 +1,4 @@
-package javaHomework.homework2;
+package JavaHomework.homework2;
 
 public class Alphabet {
     private String name;

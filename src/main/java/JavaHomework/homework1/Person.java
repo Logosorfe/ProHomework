@@ -1,4 +1,4 @@
-package javaHomework.homework1;
+package JavaHomework.homework1;
 
 public class Person {
     private String name;

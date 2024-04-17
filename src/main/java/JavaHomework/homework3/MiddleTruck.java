@@ -1,4 +1,4 @@
-package javaHomework.homework3;
+package JavaHomework.homework3;
 
 public class MiddleTruck extends Truck {
     public MiddleTruck(int arraySize) {

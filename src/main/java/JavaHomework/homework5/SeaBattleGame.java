@@ -1,4 +1,4 @@
-package javaHomework.homework5;
+package JavaHomework.homework5;
 
 public class SeaBattleGame {
 //    private static final int FIELD_LENGTH = 10;
