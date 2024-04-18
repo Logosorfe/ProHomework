@@ -31,16 +31,13 @@ public class Storage {
         for (int i = 0; i < this.products.length; i++) {
             if (i % 3 == 0) {
                 System.out.println("Enter book's name");
-                this.products[i] = new BookProduct(scanner.next());
-                scanner.nextLine();//без этого глючит сканнер
+                this.products[i] = new BookProduct(scanner.nextLine());
             } else if (i / 2 == 1) {
                 System.out.println("Enter food's name");
-                this.products[i] = new FoodProduct(scanner.next());
-                scanner.nextLine();//без этого глючит сканнер
+                this.products[i] = new FoodProduct(scanner.nextLine());
             } else {
                 System.out.println("Enter tech's name");
-                this.products[i] = new TechProduct(scanner.next());
-                scanner.nextLine();//без этого глючит сканнер
+                this.products[i] = new TechProduct(scanner.nextLine());
             }
         }
     }
