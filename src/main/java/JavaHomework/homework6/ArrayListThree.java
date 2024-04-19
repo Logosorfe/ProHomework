@@ -14,8 +14,8 @@ public class ArrayListThree {
 
     public static List<Integer> oddIntegers(List<Integer> integerList) {
         List<Integer> tempIntegers = new ArrayList<>();
-        for (int element : integerList) {
-            if (!(element % 2 == 0))
+        for (Integer element : integerList) {
+            if (element % 2 != 0)
                 tempIntegers.add(element);
         }
         return tempIntegers;
