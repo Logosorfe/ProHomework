@@ -169,7 +169,7 @@ public class SeaBattleGame {
 
             printField(currentPlayerBattleField);
 
-            if (!isPlayerAlive(playerFieldTwo)) {
+            if (!isPlayerAlive(currentPlayerEnemyField)) {
                 break;
             }
             if (shotCheck == 0) {
