@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ArrayListFour {
+public class TaskFour {
     public static void main(String[] args) {
         List<String> stringList = Arrays.asList("to", "be", "or", "not", "to", "be");
 

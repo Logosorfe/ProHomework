@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ArrayListThree {
+public class TaskThree {
     public static void main(String[] args) {
         List<Integer> integerList = Arrays.asList(3, 8, 4, 1, 9, 5, 2, 7, 6);
 

@@ -2,7 +2,7 @@ package JavaHomework.homework6;
 
 import java.util.ArrayList;
 
-public class ArrayListTwo {
+public class TaskTwo {
     public static void main(String[] args) {
         ArrayList<String> strings = new ArrayList<>();
         strings.add("Hello");
@@ -11,10 +11,10 @@ public class ArrayListTwo {
         strings.add("you");
         strings.add("today");
 
-        ArrayListTwo arrayListTwo = new ArrayListTwo();
+        TaskTwo taskTwo = new TaskTwo();
         System.out.println("Original list - " + strings);
         System.out.println("Size of each string - "
-                + arrayListTwo.sizeOfEachString(strings));
+                + taskTwo.sizeOfEachString(strings));
     }
     public ArrayList<Integer>sizeOfEachString(ArrayList<String> strings){
         ArrayList<Integer>tempIntegers=new ArrayList<>();

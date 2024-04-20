@@ -3,7 +3,7 @@ package JavaHomework.homework6;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListOne {
+public class TaskOne {
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
         integers.add(9);
@@ -16,9 +16,9 @@ public class ArrayListOne {
         integers.add(6);
         integers.add(4);
 
-        ArrayListOne arrayListOne = new ArrayListOne();
+        TaskOne taskOne = new TaskOne();
         System.out.println("List with multiplied integers - "
-                + arrayListOne.doubleIntegers(integers));
+                + taskOne.doubleIntegers(integers));
         System.out.println("Original list - " + integers);
     }
 
