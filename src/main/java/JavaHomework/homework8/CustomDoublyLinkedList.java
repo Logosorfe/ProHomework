@@ -85,8 +85,8 @@ public class CustomDoublyLinkedList {
             temp.setPrevious(null);
             head.setNext(null);
             head = temp;
-// При втором варианте остаётся у бывшего head ссылка на текущий head, не знаю сработает ли
-// garbage collector при втором варианте, поэтому оставил вариант выше
+/** При втором варианте остаётся у бывшего head ссылка на текущий head, не знаю сработает ли
+garbage collector при втором варианте, поэтому оставил вариант выше */
 //            head.getNext().setPrevious(null);
 //            head = head.getNext();
             size--;

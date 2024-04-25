@@ -9,11 +9,8 @@ public class CustomArrayDeque implements MyDeque {
     private int tail;
 
     public CustomArrayDeque(int capacity) {
-        if (capacity < 16) {/** При такой записи (capacity < 1) можно создать массив с одним
-         элементом. Мало того что само дальнейшее утверждение "Capacity must be more than 1"
-         не будет работать. Так ещё и выдаст ошибку ArrayIndexOutOfBoundsException при
-         использовании метода addToHead, созданного тут. Поставил изначальный размер в 16 элементов.*/
-            throw new IllegalArgumentException("Capacity must be more than 1");
+        if (capacity < 16) {
+            throw new IllegalArgumentException("Capacity must be more than 15");
         }
 
         this.elements = new Integer[capacity];/** При "(capacity - 1) / 2" изначальный

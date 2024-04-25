@@ -13,8 +13,8 @@ public class GameUtility {
             if (sc.hasNextInt()) {
                 players = sc.nextInt();
                 if (cardsForPlayer * players <= deckUtility.numberOfCards
-                        && cardsForPlayer * players > 0) //здесь отсутствовала
-                // && cardsForPlayer * players > 0
+                        && cardsForPlayer * players > 0) /**здесь отсутствовала
+                && cardsForPlayer * players > 0 */
                 {
                     break;
                 } else {
@@ -30,7 +30,7 @@ public class GameUtility {
             } else {
                 System.out.println("You have not entered a number, or your number is too " +
                         "large!");
-                sc.next();//без этого всё летело в цикл
+                sc.next();/** без этого всё летело в цикл */
             }
         }
     }
