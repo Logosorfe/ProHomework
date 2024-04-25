@@ -49,7 +49,7 @@ public class CustomDoublyLinkedList {
                 }
                 break;
             default:
-                if (index < size / 2) {
+                if (index <= size / 2) {
                     Node current = head;
                     int count = 0;
                     while (count < index - 1) {
@@ -100,7 +100,7 @@ public class CustomDoublyLinkedList {
             size--;
             return;
         }
-        if (index < size / 2) {
+        if (index <= size / 2) {
             Node current = head;
             int count = 0;
             while (count < index - 1) {
