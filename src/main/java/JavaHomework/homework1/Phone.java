@@ -8,6 +8,12 @@ public class Phone {
     public Phone() {
     }
 
+    public Phone(int number, String model, short weight) {
+        this.number = number;
+        this.model = model;
+        this.weight = weight;
+    }
+
     public int getNumber() {
         return number;
     }
