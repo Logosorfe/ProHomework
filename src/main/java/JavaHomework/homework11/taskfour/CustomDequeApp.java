@@ -42,7 +42,8 @@ public class CustomDequeApp {
 
         Iterator<Integer> originalIterator = original.iterator();
 
-        original.addLast(11);
+        original.addLast(11);  /** Получается, что после создания итератора, он не
+         воспринимает вносимое мной изменение в очередь? */
 
         System.out.println(original);
 
