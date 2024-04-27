@@ -1,5 +1,7 @@
 package JavaHomework.homework11.taskfour;
 
+import java.util.Iterator;
+
 public interface MyDeque {
 
     void addToHead(Integer element);
@@ -15,4 +17,8 @@ public interface MyDeque {
     Integer peekTail();
 
     boolean isEmpty();
+
+    int size();
+
+    Iterator<Integer> iterator();
 }

@@ -1,20 +1,53 @@
 package JavaHomework.homework11.taskfour;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
+
 public class CustomDequeApp {
 
     public static void main(String[] args) {
-        MyDeque customArrayDeque = new CustomArrayDeque(16);
-        customArrayDeque.addToHead(10);
-        customArrayDeque.addToHead(15);
-        customArrayDeque.addToTail(5);
-        customArrayDeque.addToTail(8);
+        MyDeque custom = new CustomArrayDeque(16);
+        Deque<Integer> original = new ArrayDeque<>();
 
-        System.out.println(customArrayDeque);
+        for (int i = 0; i < 10; i++) {
+            original.addFirst(i);
+            custom.addToHead(i);
+        }
+        for (int i = 0; i < 12; i++) {
+            original.addLast(i);
+            custom.addToTail(i);
+        }
+        for (int i = 0; i < 4; i++) {
+            original.pollLast();
+            custom.pollTail();
+        }
+        for (int i = 0; i < 2; i++) {
+            original.pollFirst();
+            custom.pollHead();
+        }
 
-        System.out.println(customArrayDeque.pollHead());
+        System.out.println(original);
+        System.out.println(custom);
 
-        System.out.println(customArrayDeque.pollTail());
+        Iterator<Integer> customIterator = custom.iterator();
 
-        System.out.println(customArrayDeque);
+        custom.addToTail(11);
+
+        while (customIterator.hasNext()) {
+            System.out.print(customIterator.next() + " ");
+        }
+
+        System.out.println();
+
+        Iterator<Integer> originalIterator = original.iterator();
+
+        original.addLast(11);
+
+        System.out.println(original);
+
+        while (originalIterator.hasNext()) {
+            System.out.print(originalIterator.next() + " ");
+        }
     }
 }
