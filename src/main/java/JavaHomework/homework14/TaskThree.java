@@ -21,8 +21,10 @@ public class TaskThree {
         File file = new File(path);
         File[] files = file.listFiles();
         for (File currentFile : files) {
-            if (currentFile.isDirectory()) deleteDirectories(currentFile.getAbsolutePath());
-            currentFile.delete();
+            if (currentFile.isDirectory()) {
+                deleteDirectories(currentFile.getAbsolutePath());
+                currentFile.delete();
+            }/** Забыл поставить эти кавычки и стёр всё в папке homework14 :))) */
         }
     }
 }
