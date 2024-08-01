@@ -24,7 +24,7 @@ public class TaskThree {
             if (currentFile.isDirectory()) {
                 deleteDirectories(currentFile.getAbsolutePath());
                 currentFile.delete();
-            }/** Забыл поставить эти кавычки и стёр всё в папке homework14 :))) */
+            }/** Забыл поставить эти скобки и стёр всё в папке homework14 :))) */
         }
     }
 }
