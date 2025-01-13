@@ -11,10 +11,10 @@ public class HippApp {
         Random random = new Random();
         String[] result = new String[4];
 
-        Thread one = new Thread(new Horse("Alex", random.nextInt(10), loopLength, (byte) 0, result));
-        Thread two = new Thread(new Horse("Oleg", random.nextInt(10), loopLength, (byte) 1, result));
-        Thread three = new Thread(new Horse("Max", random.nextInt(10), loopLength, (byte) 2, result));
-        Thread four = new Thread(new Horse("Egor", random.nextInt(10), loopLength, (byte) 3, result));
+        Thread one = new Thread(new Horse("Alex", random.nextInt(10) + 1, loopLength, (byte) 0, result));
+        Thread two = new Thread(new Horse("Oleg", random.nextInt(10) + 1, loopLength, (byte) 1, result));
+        Thread three = new Thread(new Horse("Max", random.nextInt(10) + 1, loopLength, (byte) 2, result));
+        Thread four = new Thread(new Horse("Egor", random.nextInt(10) + 1, loopLength, (byte) 3, result));
 
         System.out.println("Start : ");
 

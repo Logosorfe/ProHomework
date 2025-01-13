@@ -18,14 +18,19 @@ public class Horse implements Runnable {
 
     public Horse(String name, int step, int loopLength, byte index, String[] result) {
         this.name = name;
-        this.step = step + 1;
+        this.step = step;//Поменял в исполнительном классе HippApp на random.nextInt(10) + 1, чтобы можно было сделать тест
         this.loopLength = loopLength;
         this.index = index;
         this.result = result;
     }
 
     @Override
-    public void run() {
+    public void run() { //Сделал тест на данный метод
+        if (step <= 0) {
+            throw new ArithmeticException("Step can not be zero or below that");
+        } else if (loopLength <= 0) {
+            throw new ArithmeticException("Loop's length can not be zero or below that");
+        }
         while (currentPosition < loopLength) {
             try {
                 Thread.sleep(10);
