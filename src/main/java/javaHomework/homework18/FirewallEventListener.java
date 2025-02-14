@@ -1,7 +1,6 @@
 package javaHomework.homework18;
 
 import java.util.Iterator;
-import java.util.List;
 
 public class FirewallEventListener implements Runnable {
 
